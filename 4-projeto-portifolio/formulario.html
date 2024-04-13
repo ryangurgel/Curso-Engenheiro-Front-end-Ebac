@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Formulário</h1>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <nav class="side-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+                <li><a href="elementos-graficos.html">Elementos Gráficos</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <div class="form-banner">
+                <h2>Entre em contato conosco</h2>
+                <p>Vamos tomar um café juntos? Preencha o formulário abaixo e responderemos em breve.</p>
+            </div>
+            <article>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Qual linguagem você prefere?</label><br>
+                        <input type="radio" name="linguagens" value="html"> HTML
+                        <input type="radio" name="linguagens" value="css"> CSS
+                        <input type="radio" name="linguagens" value="javascript"> JavaScript
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quais linguagens você sabe?</label><br>
+                        <input type="checkbox" name="linguagens" value="html"> HTML
+                        <input type="checkbox" name="linguagens" value="css"> CSS
+                        <input type="checkbox" name="linguagens" value="javascript"> JavaScript
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cor">Qual a sua cor favorita?</label><br>
+                        <select id="cor">
+                            <option value="Azul">Azul</option>
+                            <option value="Verde">Verde</option>
+                            <option value="Vermelho" selected>Vermelho</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aula de Frontend. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

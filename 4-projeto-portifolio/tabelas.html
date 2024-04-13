@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/tabelas.css">
+    <title>Tabelas</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Tabelas</h1>
+        </div>
+    </header>
+
+    <main>
+        <nav class="side-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+                <li><a href="elementos-graficos.html">Elementos Gráficos</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section id="tabela-basica">
+                <h2>Tabela Básica</h2>
+                <table>
+                    <caption>Tabela de Alunos</caption>
+                    <colgroup>
+                        <col style="background-color: #f0f0f0;">
+                        <col style="background-color: #e0e0e0;">
+                        <col style="background-color: #d0d0d0;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Sobrenome</th>
+                            <th scope="col">Idade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="nome">João</td>
+                            <td headers="sobrenome">Silva</td>
+                            <td headers="idade">25</td>
+                        </tr>
+                        <tr>
+                            <td headers="nome">Maria</td>
+                            <td headers="sobrenome">Souza</td>
+                            <td headers="idade">30</td>
+                        </tr>
+                        <tr>
+                            <td headers="nome">Carlos</td>
+                            <td headers="sobrenome">Oliveira</td>
+                            <td headers="idade">28</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total de Alunos: 3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="tabela-estilizada">
+                <h2>Tabela Estilizada</h2>
+                <table class="estilizada">
+                    <caption>Tabela de Produtos</caption>
+                    <colgroup>
+                        <col span="1" style="background-color: #f0f0f0;">
+                        <col span="2" style="background-color: #e0e0e0;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="codigo">001</td>
+                            <td headers="descricao">Camiseta</td>
+                            <td headers="preco">R$ 29,90</td>
+                        </tr>
+                        <tr>
+                            <td headers="codigo">002</td>
+                            <td headers="descricao">Calça Jeans</td>
+                            <td headers="preco">R$ 79,90</td>
+                        </tr>
+                        <tr>
+                            <td headers="codigo">003</td>
+                            <td headers="descricao">Tênis</td>
+                            <td headers="preco">R$ 99,90</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total de Produtos: 3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="tabela-completa">
+                <h2>Tabela Completa</h2>
+                <table class="completa">
+                    <caption>Tabela de Pedidos</caption>
+                    <colgroup>
+                        <col span="1" style="background-color: #f0f0f0;">
+                        <col span="1" style="background-color: #e0e0e0;">
+                        <col span="1" style="background-color: #d0d0d0;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Pedido</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="pedido">001</td>
+                            <td headers="data">2024-04-10</td>
+                            <td headers="total">R$ 120,00</td>
+                        </tr>
+                        <tr>
+                            <td headers="pedido">002</td>
+                            <td headers="data">2024-04-11</td>
+                            <td headers="total">R$ 250,00</td>
+                        </tr>
+                        <tr>
+                            <td headers="pedido">003</td>
+                            <td headers="data">2024-04-12</td>
+                            <td headers="total">R$ 180,00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total de Pedidos:</td>
+                            <td>R$ 550,00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aula de Frontend. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

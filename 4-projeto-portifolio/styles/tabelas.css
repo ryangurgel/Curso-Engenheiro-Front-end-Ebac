@@ -1,0 +1,210 @@
+/* Reset CSS */
+/* Definições para resetar as margens, preenchimento e modelo de caixa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+/* Estilos aplicados ao corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos do logotipo */
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Estilos da barra lateral de navegação */
+.side-nav {
+    width: 200px;
+    background: #ccc;
+}
+
+/* Estilos da lista de navegação */
+.side-nav ul {
+    list-style: none;
+}
+
+
+/* Estilos de hover para os itens da lista de navegação */
+.side-nav ul li:hover {
+    background-color: #ddd; /* Altere para a cor desejada */
+    cursor: pointer;
+}
+
+/* Estilos dos links na barra lateral de navegação */
+.side-nav ul li a {
+    display: block; 
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px; 
+}
+
+/* Estilos do conteúdo principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Para ocupar todo o espaço restante */
+    padding: 20px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Estilos das Tabelas */
+/* Estilos básicos das tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+/* Estilos das Tabelas Estilizadas */
+/* Estilos específicos para tabelas estilizadas */
+table.estilizada {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+table.estilizada caption {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+table.estilizada th,
+table.estilizada td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+table.estilizada th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos da Tabela Completa */
+/* Estilos específicos para a tabela completa */
+table.completa {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #999;
+}
+
+table.completa caption {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+}
+
+table.completa th,
+table.completa td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+table.completa th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+table.completa tfoot {
+    background-color: #e0e0e0;
+}
+
+/* Estilos Avançados */
+/* Estilos adicionais para tabelas avançadas */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ffefb3;
+}
+
+table th:first-child {
+    width: 30%;
+}
+
+table td:nth-child(2) {
+    font-style: italic;
+}
+
+table td:nth-child(3) {
+    color: #007bff;
+}
+
+table.estilizada tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+table.estilizada tr:hover {
+    background-color: #d9d9d9;
+}
+
+table.completa tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table.completa tr:hover {
+    background-color: #ffc107;
+}

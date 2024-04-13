@@ -1,0 +1,160 @@
+/* Reset CSS */
+/* Definições para resetar as margens, preenchimento e modelo de caixa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+/* Estilos aplicados ao corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos do logotipo */
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Estilos da barra lateral de navegação */
+.side-nav {
+    width: 200px;
+    background: #ccc;
+}
+
+/* Estilos da lista de navegação */
+.side-nav ul {
+    list-style: none;
+}
+
+
+/* Estilos de hover para os itens da lista de navegação */
+.side-nav ul li:hover {
+    background-color: #ddd;
+    /* Altere para a cor desejada */
+    cursor: pointer;
+}
+
+/* Estilos dos links na barra lateral de navegação */
+.side-nav ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Estilos do conteúdo principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Para ocupar todo o espaço restante */
+    padding: 20px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Estilos para imagens de exemplo */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query para tablets */
+@media (max-width: 768px) {
+    /* Ajuste os estilos conforme necessário para telas de smartphones */
+
+    /* Reduzir o tamanho do logotipo */
+    .logo h1 {
+        font-size: 12px;
+    }
+
+    /* Alterar o espaçamento dos itens de navegação */
+    .side-nav ul li a {
+        padding: 10px;
+    }
+
+    /* Reduzir o espaçamento do conteúdo */
+    .content {
+        padding: 15px;
+    }
+
+    /* Alinhar o texto do rodapé ao centro */
+    footer {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
+/* Media Query para smartphones */
+@media (max-width: 425px) {
+    /* Ajuste os estilos conforme necessário para telas de smartphones muito pequenos */
+
+    /* Reduzir ainda mais o tamanho do logotipo */
+    .logo h1 {
+        font-size: 10px;
+    }
+
+    /* Alterar ainda mais o espaçamento dos itens de navegação */
+    .side-nav ul li a {
+        padding: 8px;
+    }
+
+    /* Reduzir ainda mais o espaçamento do conteúdo */
+    .content {
+        padding: 10px;
+    }
+
+    /* Alinhar o texto do rodapé ao centro */
+    footer {
+        font-size: 10px;
+    }
+
+    header {
+        padding: 8px;
+    }
+}

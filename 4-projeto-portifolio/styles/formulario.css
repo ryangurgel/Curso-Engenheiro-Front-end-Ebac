@@ -1,0 +1,152 @@
+/* Reset CSS */
+/* Definições para resetar as margens, preenchimento e modelo de caixa */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+/* Estilos aplicados ao corpo do documento */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilos do logotipo */
+.logo {
+  text-align: center;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+/* Estilos do conteúdo principal */
+main {
+  display: flex;
+  flex: 1;
+}
+
+/* Estilos da barra lateral de navegação */
+.side-nav {
+  width: 200px;
+  background: #ccc;
+}
+
+/* Estilos da lista de navegação */
+.side-nav ul {
+  list-style: none;
+}
+
+
+/* Estilos de hover para os itens da lista de navegação */
+.side-nav ul li:hover {
+  background-color: #ddd; /* Altere para a cor desejada */
+  cursor: pointer;
+}
+
+/* Estilos dos links na barra lateral de navegação */
+.side-nav ul li a {
+  display: block; 
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px; 
+}
+
+/* Estilos do conteúdo principal */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Para ocupar todo o espaço restante */
+  padding: 20px;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+
+/* Estilos do banner */
+.form-banner {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-banner h2 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.form-banner p {
+  color: #666;
+  font-size: 18px;
+}
+
+/* Estilos do formulário */
+article {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos dos grupos de formulário */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilos das etiquetas do formulário */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos dos campos de entrada do formulário */
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos dos botões de envio do formulário */
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
