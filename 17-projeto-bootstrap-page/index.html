@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício bootstrap-1</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Advocacia</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre" class="section-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2 class="mb-4">Sobre nós</h2>
+                    <p class="lead mb-4">Somos uma equipe de advogados comprometidos em fornecer serviços jurídicos de alta qualidade para nossos clientes. Com décadas de experiência combinada, estamos prontos para lidar com uma variedade de questões legais, desde litígios complexos até questões de direito empresarial.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./images/image-1.jpg" alt="image-1" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="section-services bg-light"> 
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/direito_civil.png" alt="direito_civil" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Direito Civil</h5>
+                            <p class="card-text">Oferecemos representação legal em questões de direito civil, incluindo
+                                contratos, propriedade e responsabilidade civil.</p>
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#modal-1">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/direito_penal.png" alt="direito_penal" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Direito Penal</h5>
+                            <p class="card-text">Nossa equipe está preparada para lidar com casos criminais complexos,
+                                defendendo os direitos de nossos clientes em todas as fases do processo penal.</p>
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#modal-2">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/direito_empresarial.png" alt="direito_empresarial" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Direito Empresarial</h5>
+                            <p class="card-text">Oferecemos consultoria jurídica abrangente para empresas, ajudando-as a
+                                navegar pelas complexidades legais do mundo dos negócios.</p>
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#modal-3">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-contact bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Entre em contato conosco para agendar uma consulta ou para discutir seu caso legal.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name=" nome" placeholder="Seu nome" required >
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name=" nome" placeholder="Seu e-mail" required >
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="" rows="5" placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Direito Civil</h5>
+                    <button class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Serviços oferecidos</h6>
+                    <p>Nossa equipe de advogados especializados em direito civil oferece uma variedade de serviços,
+                        incluindo representação em litígios, elaboração de contratos e consultoria jurídica.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Direito Penal</h5>
+                    <button class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Serviços oferecidos</h6>
+                    <p>Nossa equipe de advogados especializados em direito penal oferece defesa legal agressiva para
+                        clientes enfrentando acusações criminais, garantindo que seus direitos sejam protegidos em todas
+                        as etapas do processo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Direito Empresarial</h5>
+                    <button class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Serviços oferecidos</h6>
+                    <p>Nossa equipe de advogados especializados em direito empresarial fornece consultoria jurídica
+                        abrangente para empresas, ajudando-as a navegar pelas complexidades legais do mundo dos negócios
+                        e a alcançar seus objetivos comerciais.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
