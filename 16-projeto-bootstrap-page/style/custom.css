@@ -1,138 +1,82 @@
+/* Cores */
+:root {
+    --primary-color: #FF8C00; /* DarkOrange */
+    --secondary-color: #4682B4; /* SteelBlue */
+    --tertiary-color: #FF6347; /* Tomato */
+    --light-bg-color: #F0F8FF; /* AliceBlue */
+    --dark-bg-color: #222; /* Cor de fundo mais escura */
+    --text-color: #333; /* Cor do texto principal */
+    --light-text-color: #FFF; /* Cor do texto claro */
+}
+
 /* Estilos gerais */
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-#logo {
-    max-width: 70px;
-    height: auto;
-}
-
-input,
-textarea {
-    margin-bottom: 1rem;
-}
-
-.card {
-    margin-bottom: 20px;
-}
-
-.col-md-7.col-sm-12.alin {
-    padding: 20px;
-}
-
-.img-fluid {
-    border-radius: 8px; /* Aumenta o raio da borda */
-}
-
-.img-fluid:hover {
-    transition: transform 800ms;
-    transform: scale(1.03);
-}
-
-.table-hover {
-    background-color: #FFF8DC; /* Cornsilk */
-}
-
-.btn {
-    background-color: #FF8C00; /* DarkOrange */
-    color: #fff;
-    border: none;
-    border-radius: 25px; /* Deixa os botões mais arredondados */
-    padding: 12px 24px; /* Aumenta o preenchimento */
-}
-
-/* Estilos adicionais */
 body {
-    background: #F0F8FF; /* AliceBlue */
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
 }
 
-.navbar-inverse {
-    background: #4682B4; /* SteelBlue */
-    border-bottom: 4px solid #FF6347; /* Tomato */
+.header {
+    background-color: var(--secondary-color);
+    border-bottom: 4px solid var(--tertiary-color);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: auto; 
+    background-color: transparent; 
+    border: none; 
+    font-size: 2rem; 
+    color: #fff; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1; 
 }
 
 .navbar-brand {
     font-family: 'Raleway', sans-serif;
-    font-size: 24px; /* Aumenta o tamanho da fonte */
+    font-size: 24px;
     text-transform: uppercase;
-    color: #FFF;
+    color: var(--light-text-color);
     letter-spacing: 2px;
     margin-top: 2px;
 }
 
-.nav {
-    margin-bottom: 0;
-}
-
-.nav a {
+.nav-link {
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 16px; /* Aumenta o tamanho da fonte */
+    font-weight: 400;
+    font-size: 16px;
     letter-spacing: 1px;
-    padding: 16px;
-    color: #F0FFFF; /* Azure */
     text-transform: uppercase;
-    position: relative;
-    z-index: 1000;
+    color: var(--light-text-color);
 }
 
-.nav a:hover {
-    color: #FFF;
+.nav-link:hover {
+    color: var(--light-text-color);
 }
 
-.nav li {
-    position: relative;
+.col-md-4, .col-md-7.col-sm-12 {
+    padding: 10px;
 }
 
-.navbar-inverse .navbar-toggle {
-    border: none;
+.section-about,
+.section-services,
+.section-contact {
+    padding: 4rem 0;
 }
 
-.navbar-collapse {
-    box-shadow: none !important;
-    border: none !important;
+.section-services {
+    background-color: var(--light-bg-color);
 }
 
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus,
-.navbar-inverse .navbar-toggle:active {
-    background: transparent !important;
+.section-contact {
+    background-color: var(--dark-bg-color);
+    color: var(--light-text-color);
 }
 
-.icon-bar {
-    background: #F0FFFF; /* Azure */
-}
-
-.hover {
-    display: block;
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background: #EE445F !important;
-    z-index: 0;
-    opacity: 0;
-}
-
-@media (max-width: 767px) {
-    .nav {
-        padding-bottom: 20px;
-    }
-
-    .nav a {
-        padding: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav {
-        padding-bottom: 20px;
-    }
-}

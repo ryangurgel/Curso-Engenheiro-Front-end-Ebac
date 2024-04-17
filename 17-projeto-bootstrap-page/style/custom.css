@@ -27,6 +27,18 @@ body {
     border-bottom: 4px solid var(--tertiary-color);
 }
 
+.carousel-control-prev, .carousel-control-next {
+    width: auto; 
+    background-color: transparent; 
+    border: none; 
+    font-size: 2rem; 
+    color: #fff; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1; 
+}
+
 .navbar-brand {
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
