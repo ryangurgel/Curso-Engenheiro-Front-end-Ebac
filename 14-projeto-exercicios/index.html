@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operações em JavaScript</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Operações em JavaScript</h2>
+  <pre>// Operações
+
+console.log(10 + 15); // 25
+
+console.log("10" + 2); // "102"
+
+console.log("10" * 2); // 20
+
+console.log("10" / 3); // 3.3333333333333335
+
+console.log("10" % 3); // 1
+
+console.log(10 + true); // 11
+
+console.log(10 == "10"); // true
+
+console.log(10 === "10"); // false
+
+console.log(10 < 11); // true
+
+console.log(10 > 12); // false
+
+console.log(10 <= 10.1); // true
+
+console.log(10 > 9.99); // true
+
+console.log(10 != "dez"); // true
+
+console.log(10 + true); // 11
+
+console.log("dez" + true); // "deztrue"
+
+console.log(10 + false); // 10
+
+console.log(10 * false); // 0
+
+console.log(true + true); // 2
+
+console.log(10++); // 10 (post-increment not allowed in strict mode)
+
+console.log(10--); // 10 (post-decrement not allowed in strict mode)
+
+console.log(1 & 1); // 1
+
+console.log(1 & 0); // 0
+
+console.log(0 & 0); // 0
+
+console.log(1 & 0); // 0
+
+console.log(0 / 1); // 0
+
+console.log(5 + 5 == 10); // true
+
+console.log("5" + "5" == 10); // false
+
+console.log("5" * 2 > 9); // true
+
+console.log((10 + 10) * 2); // 40
+
+console.log(10 + 10 * 2); // 30
+
+// Perguntas de acordo com as variáveis
+
+var branco = "preto";
+
+var preto = "cinza";
+
+var cinza = "branco";
+
+var carro = "preto";
+
+var valor = 30000;
+
+var prestacao = 750;
+
+console.log(branco == "branco"); // false
+
+console.log(branco == cinza); // false
+
+console.log(carro === branco); // false
+
+var cavalo = carro == "preto" ? "cinza" : "marron";
+
+console.log(cavalo); // "cinza"
+
+// Quantas prestações são necessárias para pagar o valor do carro com uma entrada de 3.000?
+
+var entrada = 3000;
+
+var valorRestante = valor - entrada;
+
+var numeroPrestacoes = valorRestante / prestacao;
+
+console.log(numeroPrestacoes); // 36
+
+// Somando as variáveis de cores é formada uma string de quantos caracteres?
+
+var cores = branco + preto + cinza;
+
+console.log(cores.length); // 15</pre>
+</div>
+
+</body>
+</html>
