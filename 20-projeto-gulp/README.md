@@ -1,55 +1,34 @@
-
 # Projeto Módulo 20 - Tarefa EBAC (Curso de Frontend)
 
-  
-
-Este projeto consiste em um conjunto de tarefas automatizadas com Gulp para otimização de arquivos CSS, JS e imagens para um site de comércio eletrônico, desenvolvido como parte do Módulo 20 da tarefa da EBAC no curso de Frontend.
-
-  
+Este projeto consiste em um conjunto de tarefas automatizadas com Gulp para otimização de arquivos CSS, JS e imagens para um site de comércio eletrônico. Esse projeto foi realizado como tarefa do curso de Frontend da EBAC.
 
 ## Funcionalidades
 
-  
-
--  **Concatenação** de arquivos JS e CSS.
-
--  **Minificação** de arquivos JS e CSS.
-
--  **Renomeação** de arquivos JS e CSS com sufixo `.min`.
-
--  **Otimização** de imagens.
-
--  **Remoção** de comentários de CSS e JS.
-
--  **Servidor local** para desenvolvimento com **BrowserSync**.
+- **Concatenação** de arquivos JS e CSS.
+- **Minificação** de arquivos JS e CSS.
+- **Renomeação** de arquivos JS e CSS com sufixo `.min`.
+- **Otimização** de imagens.
+- **Remoção** de comentários de CSS e JS.
 
   
 
 ## Tecnologias Utilizadas
 
-  
-
 - Node.js
-
-- Gulp e plugins: `gulp-concat`, `gulp-cssmin`, `gulp-uglify`, `gulp-imagemin`
-
+- Gulp e plugins:
+  - `gulp-concat`
+  - `gulp-cssmin`
+  - `gulp-uglify`
+  - `gulp-imagemin`
 - NPM
-
 - Bootstrap
-
 - FontAwesome
-
 - Owl Carousel
-
 - jQuery
-
-- BrowserSync
 
   
 
 ## Estrutura de Arquivos
-
-  
 
 A estrutura de arquivos do projeto está organizada da seguinte maneira:
 
@@ -94,7 +73,7 @@ Para utilizar este projeto, siga os passos abaixo:
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd cd Curso-Engenheiro-Front-end-Ebac/20-projeto-gulp-2
+    cd cd Curso-Engenheiro-Front-end-Ebac/20-projeto-gulp
     ```
 
 3. Instale as dependências:
@@ -105,11 +84,6 @@ Para utilizar este projeto, siga os passos abaixo:
 # Uso
 
 Para executar as tarefas do Gulp, use os seguintes comandos:
-
-- **Desenvolvimento**: Este comando executa um servidor local e inicia o monitoramento de todos os arquivos do projeto para recarregar o navegador automaticamente a cada mudança.
-    ```bash
-    gulp server
-    ```
 
 - **Build**: Gera a versão de produção do projeto com arquivos otimizados.
     ```bash
