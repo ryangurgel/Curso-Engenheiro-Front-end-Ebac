@@ -73,7 +73,7 @@ Para utilizar este projeto, siga os passos abaixo:
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd cd Curso-Engenheiro-Front-end-Ebac/20-projeto-gulp
+    cd Curso-Engenheiro-Front-end-Ebac/20-projeto-gulp
     ```
 
 3. Instale as dependências:
