@@ -89,12 +89,12 @@ Para utilizar este projeto, siga os passos abaixo:
 
 1. Clone o repositório:
     ```bash
-    git clone https://seu-repositorio/tarefagulp.git
+    git clone https://github.com/ryangurgel/Curso-Engenheiro-Front-end-Ebac.git
     ```
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd tarefagulp
+    cd cd Curso-Engenheiro-Front-end-Ebac/20-projeto-gulp-2
     ```
 
 3. Instale as dependências:
