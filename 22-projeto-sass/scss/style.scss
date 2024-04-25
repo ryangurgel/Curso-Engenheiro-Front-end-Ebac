@@ -1,0 +1,50 @@
+@import 'vars';
+@import 'reset';
+@import 'blocks';
+@import 'destack';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: $border-radius;
+}
+
+footer {
+    margin-top: $spacing-default;
+}
+
+.cars {
+    h2 {
+        color: $text-color;
+        font-size: $font-size-medium;
+        margin-bottom: $spacing-default;
+    }
+
+    li {
+        color: $text-color;
+
+        a {
+            background-color: $accent-color;
+            border-radius: $border-radius;
+            color: white;
+            display: inline-block;
+            font-size: $font-size-normal;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: darken($accent-color, 10%);
+            }
+        }
+    }
+}

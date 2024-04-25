@@ -1,0 +1,30 @@
+.destack {
+    background-color: $background-color;
+    padding: $spacing-default;
+
+    h1 {
+        color: $primary-color;
+        font-size: $font-size-big;
+        margin-top: 0;
+    }
+
+    h2 {
+        color: $text-color;
+        font-size: $font-size-normal;
+        margin-left: $spacing-default;
+        margin-top: $spacing-default;
+    }
+
+    img {
+        display: block;
+        margin: $spacing-default auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    p {
+        color: $accent-color;
+        font-size: $font-size-normal;
+        padding: 1rem 0;
+    }
+}
